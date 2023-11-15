@@ -6,6 +6,7 @@
 - [Yarn](https://yarnpkg.com/) - 1.22.19
 - [React](https://ko.legacy.reactjs.org/) - 18.2.0
 - [React-Query](https://tanstack.com/query/latest) - ^5.8.4
+- [Recoil](https://recoiljs.org/ko/docs/introduction/getting-started) - ^0.7.7
 - [Axios](https://axios-http.com/kr/docs/intro) - ^1.6.0
 - [Next.js](https://nextjs.org/) - 14.0.1
 - [TypeScript](https://www.typescriptlang.org/) - 5.2.2
@@ -91,3 +92,4 @@ yarn dev
 ### 버전 기록
 
 - v1.0.0: 초기 릴리스, 패키지 설치, 레이아웃 구성, README.md 작성
+- v1.0.1: 전역 상태관리 Recoil 라이브러리 설치

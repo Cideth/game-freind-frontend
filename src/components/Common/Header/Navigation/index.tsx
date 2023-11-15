@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from './Navigate.module.scss';
+import styles from './Navigation.module.scss';
 
-const Navigate = () => {
+const Navigation = () => {
   return (
     <nav>
-      <ul className={styles.navigate}>
+      <ul className={styles.navigation}>
         <li>
           <Link href='/lol'>LOL</Link>
         </li>
@@ -23,4 +23,4 @@ const Navigate = () => {
   );
 };
 
-export default Navigate;
+export default Navigation;

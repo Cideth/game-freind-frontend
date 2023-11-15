@@ -1,7 +1,11 @@
 import Head from 'next/head';
-import React from 'react';
+import { useRecoilValue } from 'recoil';
 
-const CustomHead = ({ title = 'default Title' }) => {
+import { titleState } from '@/core/atoms/titleState';
+
+const CustomHead = () => {
+  const title = useRecoilValue(titleState);
+
   return (
     <Head>
       <title>{title}</title>

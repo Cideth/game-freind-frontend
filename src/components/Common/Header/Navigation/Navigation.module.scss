@@ -1,0 +1,16 @@
+.navigation {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    & li a {
+        color: var(--color-text);
+
+        &:hover {
+            color: var(--color-text-hover);
+            transition: .5s;
+            text-decoration: underline;
+        }
+    }
+}

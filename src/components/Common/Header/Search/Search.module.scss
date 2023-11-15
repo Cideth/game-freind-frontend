@@ -3,19 +3,19 @@
     gap: 0.5rem;
 
     input[type=search] {
-        color: #33d;
+        color: var(--color-text);
         border-radius: 10px;
         padding: 5px;
     }
 
     button {
-        border: 1px solid #fff;
+        border: 1px solid var(--color-white);
         border-radius: 5px;
         color: #fff;
 
         &:hover {
-            background: #fff;
-            color: #000;
+            background: var(--color-bg);
+            color: var(--color-text);
             transition: .5s;
         }
     }

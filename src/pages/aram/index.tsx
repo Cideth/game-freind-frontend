@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRecoilState } from 'recoil';
 
-type Props = {};
+import { titleState } from '@/core/atoms/titleState';
+import Layout from '@/components/Layout';
 
-const Aram = (props: Props) => {
-  return <div>Aram</div>;
+const Aram = () => {
+  const [title, setTitle] = useRecoilState(titleState);
+
+  useEffect(() => {
+    setTitle('Aram Page');
+  }, [setTitle]);
+
+  return <Layout>{title}</Layout>;
 };
 
 export default Aram;

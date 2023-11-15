@@ -4,14 +4,13 @@ import CustomHead from '@/utils/CustomHead';
 import Header from '../Common/Header';
 import Footer from '../Common/Footer';
 
-type Props = {
+interface Props {
   children: ReactNode;
-  title?: string;
-};
+}
 
-const Layout: React.FC<Props> = ({ children, title }) => (
+const Layout: React.FC<Props> = ({ children }) => (
   <>
-    <CustomHead title={title} />
+    <CustomHead />
     <div className={styles.layout}>
       <Header />
       <main className={styles.main}>{children}</main>
