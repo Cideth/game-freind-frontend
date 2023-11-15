@@ -1,0 +1,20 @@
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    box-shadow: var(--box-shadow);
+
+    position: sticky;
+    top: 0;
+
+    .logo {
+        img {
+            width: 70px;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.search {
+    display: flex;
+    gap: 0.5rem;
+
+    input[type=search] {
+        color: #33d;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    button {
+        border: 1px solid #fff;
+        border-radius: 5px;
+        color: #fff;
+
+        &:hover {
+            background: #fff;
+            color: #000;
+            transition: .5s;
+        }
+    }
+}

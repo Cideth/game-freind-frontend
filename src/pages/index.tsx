@@ -1,11 +1,5 @@
-import Layout from '@/components/Layout'
+import Layout from '@/components/Layout';
 
 export default function Home() {
-  return (
-    <>
-      <Layout>
-
-      </Layout>
-    </>
-  )
+  return <Layout title='Home'>Home</Layout>;
 }
