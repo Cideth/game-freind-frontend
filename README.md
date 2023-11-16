@@ -87,9 +87,10 @@ yarn dev
 
 ### README.md 현재 버전
 
-- v1.0.1
+- v1.0.2
 
 ### 버전 기록
 
 - v1.0.0: 초기 릴리스, 패키지 설치, 레이아웃 구성, README.md 작성
 - v1.0.1: 전역 상태관리 Recoil 라이브러리 설치 및 페이지 title 전역 상태관리 적용
+- v1.0.2: signIn 페이지 추가, modal component 추가

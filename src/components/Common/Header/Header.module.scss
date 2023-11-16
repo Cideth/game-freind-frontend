@@ -10,4 +10,10 @@
 
     position: sticky;
     top: 0;
+
+    @media screen and (max-width: 768px) {
+        min-height: 150px;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
 }

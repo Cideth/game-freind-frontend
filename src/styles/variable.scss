@@ -5,6 +5,14 @@
     --color-text: #656565;
     --color-text-hover: #2d2af3;
 
+    --color-button: #000000;
+    --color-button-bg: #eeeeee;
+    --color-button-bg-hover: #ff9500;
+
+    // layout
+    --container-max-width: 1200px;
+    --container-min-width: 280px;
+
     // palatte
     --color-white: #ffffff;
     --color-black: #000000;
@@ -50,8 +58,5 @@
     --font-weight-xl: 900;
     --font-family: 'Helvetica Neue', sans-serif;
 
-    // layout
-    --container-max-width: 1200px;
-    --container-min-width: 280px;
 
 }
