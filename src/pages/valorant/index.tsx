@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
-import { useRecoilState } from 'recoil';
-
-import { titleState } from '@/core/atoms/titleState';
 import Layout from '@/components/Layout';
+import usePageTitle from '@/hooks/usePageTitle';
 
 const Valorant = () => {
-  const [title, setTitle] = useRecoilState(titleState);
-
-  useEffect(() => {
-    setTitle('Valorant Page');
-  }, [setTitle]);
-
-  return <Layout>{title}</Layout>;
+  usePageTitle('Valorant');
+  return <Layout>{}</Layout>;
 };
 
 export default Valorant;

@@ -1,10 +1,8 @@
+import useTitleStore from '@/store/titleStore';
 import Head from 'next/head';
-import { useRecoilValue } from 'recoil';
-
-import { titleState } from '@/core/atoms/titleState';
 
 const CustomHead = () => {
-  const title = useRecoilValue(titleState);
+  const { title } = useTitleStore();
 
   return (
     <Head>

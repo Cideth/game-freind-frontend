@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react';
-import { useRecoilState } from 'recoil';
-
-import { titleState } from '@/core/atoms/titleState';
 import Layout from '@/components/Layout';
+import usePageTitle from '@/hooks/usePageTitle';
 
 const Home = () => {
-  const [title, setTitle] = useRecoilState(titleState);
+  usePageTitle('Home');
 
-  useEffect(() => {
-    setTitle('Find Game Friends');
-  }, [setTitle]);
-
-  return <Layout>{title}</Layout>;
+  return <Layout>Home</Layout>;
 };
 
 export default Home;

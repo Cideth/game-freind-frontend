@@ -1,22 +1,16 @@
-import { useState } from 'react';
-import { useRecoilState } from 'recoil';
-
-import { modalVisibleState } from '@/core/atoms/modalState';
+import useModalStore from '@/store/modalStore';
 import styles from './SignIn.module.scss';
 import SignInModal from '@/components/Common/Modal/SignInModal';
 
 const UserActions = () => {
-  const [modalState, setModalState] = useRecoilState<boolean>(modalVisibleState);
-  const toggleModal = () => {
-    setModalState(!modalState);
-  };
+  const { modalVisible, toggleModal } = useModalStore();
 
   return (
     <div className={styles.buttonGroup}>
       <button className={styles.signIn} onClick={toggleModal}>
         Sign In
       </button>
-      {modalState && <SignInModal onClose={toggleModal} />}
+      {modalVisible && <SignInModal onClose={toggleModal} />}
     </div>
   );
 };

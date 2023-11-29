@@ -6,7 +6,8 @@
 - [Yarn](https://yarnpkg.com/) - 1.22.19
 - [React](https://ko.legacy.reactjs.org/) - 18.2.0
 - [React-Query](https://tanstack.com/query/latest) - ^5.8.4
-- [Recoil](https://recoiljs.org/ko/docs/introduction/getting-started) - ^0.7.7
+- ~~[Recoil](https://recoiljs.org/ko/docs/introduction/getting-started) - ^0.7.7~~
+- [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) - ^4.4.7
 - [Axios](https://axios-http.com/kr/docs/intro) - ^1.6.0
 - [Next.js](https://nextjs.org/) - 14.0.1
 - [TypeScript](https://www.typescriptlang.org/) - 5.2.2
@@ -87,10 +88,11 @@ yarn dev
 
 ### README.md 현재 버전
 
-- v1.0.2
+- v1.0.3
 
 ### 버전 기록
 
 - v1.0.0: 초기 릴리스, 패키지 설치, 레이아웃 구성, README.md 작성
 - v1.0.1: 전역 상태관리 Recoil 라이브러리 설치 및 페이지 title 전역 상태관리 적용
 - v1.0.2: signIn 페이지 추가, modal component 추가
+- v1.0.3: Recoil 사용 중단하고 Zustand 상태관리 라이브러리로 변경, 전체적인 코드 수정

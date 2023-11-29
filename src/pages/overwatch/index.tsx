@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
-import { useRecoilState } from 'recoil';
-
-import { titleState } from '@/core/atoms/titleState';
 import Layout from '@/components/Layout';
+import usePageTitle from '@/hooks/usePageTitle';
 
 const OverWatch = () => {
-  const [title, setTitle] = useRecoilState(titleState);
-
-  useEffect(() => {
-    setTitle('OverWatch Page');
-  }, [setTitle]);
-
-  return <Layout>{title}</Layout>;
+  usePageTitle('Overwatch');
+  return <Layout>{}</Layout>;
 };
 
 export default OverWatch;
