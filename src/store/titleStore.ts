@@ -6,7 +6,7 @@ interface TitleType {
 }
 
 const useTitleStore = create<TitleType>((set) => ({
-  title: 'default Title',
+  title: 'Find Game Friends',
   setTitle: (newTitle: string) => set(() => ({ title: newTitle })),
 }));
 

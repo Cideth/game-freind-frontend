@@ -8,7 +8,7 @@ const UserActions = () => {
   return (
     <div className={styles.buttonGroup}>
       <button className={styles.signIn} onClick={toggleModal}>
-        Sign In
+        로그인
       </button>
       {modalVisible && <SignInModal onClose={toggleModal} />}
     </div>

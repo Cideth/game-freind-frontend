@@ -13,21 +13,68 @@
         margin: 15% auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%;
+        border-radius: 10px;
+        width: 50%;
+        min-height: 300px;
+        position: relative;
+
+        .closeButton {
+            position: absolute;
+            right: 20px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .closeButton:hover,
+        .closeButton:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .loginGroup {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+
+            .loginForm {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 80%;
+
+                input {
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    margin: 5px 0;
+                }
+
+                button {
+                    padding: 10px;
+                    background-color: var(--color-primary);
+                    color: #fff;
+                    border: none;
+                    border-radius: 10px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0056b3;
+                    }
+                }
+            }
+
+            .socialLogin {
+                display: flex;
+                flex-direction: row;
+                gap: 15px;
+            }
+        }
     }
 
-    .closeButton {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
 
-    .closeButton:hover,
-    .closeButton:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
 }

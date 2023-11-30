@@ -88,7 +88,7 @@ yarn dev
 
 ### README.md 현재 버전
 
-- v1.0.3
+- v1.0.4
 
 ### 버전 기록
 
@@ -96,3 +96,4 @@ yarn dev
 - v1.0.1: 전역 상태관리 Recoil 라이브러리 설치 및 페이지 title 전역 상태관리 적용
 - v1.0.2: signIn 페이지 추가, modal component 추가
 - v1.0.3: Recoil 사용 중단하고 Zustand 상태관리 라이브러리로 변경, 전체적인 코드 수정
+- v1.0.4: login modal UI 퍼블리싱
